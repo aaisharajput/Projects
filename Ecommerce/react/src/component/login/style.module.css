@@ -1,0 +1,35 @@
+.form{
+    width: auto;
+    background-color: #aa42f5;
+    color: #fff;
+    border-radius: 20px;
+  }
+  .btn{
+    background-color:#fff;
+    color: #000;
+    border: none;
+  }
+  .btn:hover{
+    color: #000;
+    background-color:#fff;
+  }
+  .btn:focus{
+        box-shadow: none !important; 
+    }
+    .a{
+        color:#fff;
+        float: right;
+    }
+    .a:hover{
+    color: #fff;
+  }
+  .h1{
+        font-weight: 700;
+        background: linear-gradient(to left,#951ac9 ,#c11ac9 );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+  }
+  
+  .i{
+    cursor: pointer;
+  }

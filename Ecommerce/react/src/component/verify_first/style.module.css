@@ -1,0 +1,11 @@
+.h1{
+    font-weight: 900;
+    background: linear-gradient(to right,#951ac9 20%,#e040e9 80%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.container{
+position: absolute;
+top: 30%;
+left: 10%;
+}
