@@ -1,0 +1,67 @@
+
+.r-heading{
+  color:#333;
+  font-size: 3.5rem;
+  padding-top: 2rem;
+  text-align: center;
+  letter-spacing: .2rem;
+}
+
+.review{
+  background: url(../img/images.jpg), linear-gradient(#0098a1, #0098a1) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+
+.review .r-heading{
+  color:#fff;
+  padding-bottom: 4rem;
+}
+
+.review .r-box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.review .r-box{
+  width:22rem;
+  margin:2rem 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 .3rem .5rem #000;
+  background:#fff;
+}
+
+.review .r-image{
+  margin-top: -3rem;
+}
+
+.review .r-image img{
+  height:6.3rem;
+  width:6.3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: .4rem solid #fff;
+}
+
+.review .r-content h3{
+  font-size: 1.5rem;
+  color:#0098a1;
+}
+
+.review .r-content p{
+  font-size: 0.8rem;
+  color:#333;
+  padding:0rem 1.5rem;
+}
+
+.review .stars i{
+  color:gold;
+  font-size: 1rem;
+  padding:0rem .1rem;
+}
+

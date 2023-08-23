@@ -1,0 +1,81 @@
+:root{
+    --blue:#0066FF;
+    --primary-color:#fff;
+    --secondary-color:#212121;
+    --tertiary-color:#cce0ff;
+    --shade:rgba(0,0,0,.1);
+}
+.dark-theme{
+  --primary-color:#1a1a1a;
+  --secondary-color:#fff;
+  --tertiary-color:#fff;
+   --shade:rgba(0,0,0,.9);
+}
+
+
+.services{
+  padding:2rem 9%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.ser-heading{
+  text-align: center;
+  padding:1rem 0;
+}
+
+.ser-heading span{
+  font-size: 2rem;
+  background:var(--tertiary-color);
+  color:var(--blue);
+  border-radius: .5rem;
+  padding:0px 10px;
+}
+
+
+
+.services .box-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services .box-container .box{
+  flex: 1 1 20rem;
+  border-radius: .5rem;
+  padding:1rem;
+  text-align: center;
+}
+
+.services .box-container .box i{
+  padding:1rem;
+  font-size: 3rem;
+  color:var(--blue);
+}
+
+.services .box-container .box h3{
+  font-size: 2rem;
+  color:var(--secondary-color);
+}
+
+.services .box-container .box p{
+  font-size: 1rem;
+  color:var(--secondary-color);
+  padding:1rem 0;
+}
+
+.services .box-container .box:hover{
+  box-shadow: 0 1rem 2rem var(--shade);
+}
+
+
+/* media queries  */
+
+
+@media (max-width:450px){
+
+
+  .ser-heading span{
+    font-size: 2.5rem;
+  }
+
+}

@@ -1,0 +1,162 @@
+:root{
+	--primary-color:#fff;
+	--secondary-color:#212121;
+	--tertiary-color:#fafafa;
+}
+.dark-theme{
+	--primary-color:#1a1a1a;
+	--secondary-color:#fff;
+	--tertiary-color:#262626;
+}
+body{
+	background:var(--primary-color);
+}
+.nav-container{
+	width:100%;
+    padding: 0px 0px;
+    overflow-x: hidden;
+}
+.logo{
+	width: 120px;
+	cursor: pointer;
+}
+
+.collapse{
+	justify-content: flex-end;
+}
+nav ul li{
+	padding: 0 20px;
+	font-size: 16px;
+	font-weight: 500;
+	transition: 1s ease-in-out;
+}
+nav ul li a{
+	color:  var(--secondary-color);
+}
+nav ul li a:hover{
+	color:  var(--secondary-color);
+	transform: scale(1.2);
+}
+.lang_btn{
+margin-left:6rem;
+color: var(--secondary-color);
+}
+.lang_btn a{
+color: var(--secondary-color);
+}
+.lang_btn a:hover{
+color: var(--secondary-color);
+text-decoration: none;
+}
+#icon{
+   width: 20px; 
+}
+
+.title{
+	color:  var(--secondary-color);
+	font-family: Comic Sans MS;
+}
+.title1{
+	text-align: center;
+	color:  var(--secondary-color);
+	font-family: Comic Sans MS;
+}
+.log-in{
+  background:#0066FF;
+  border-radius: 25px;
+  font-size: 15px;
+  color: #fffF;
+  font-weight: bold;
+  outline-style: none;
+  box-shadow: none;
+}
+.log-in:hover{
+	color: #fff;
+}
+
+label{
+		color:  var(--secondary-color);
+}
+.row{
+	padding-top: 0px;
+	padding-bottom: 0;
+}
+
+img{
+	width: 120px;
+}
+.img{
+	padding: 10px 30%;
+}
+
+
+.form-content{
+    width: 500px;
+    padding:20px 50px;
+}
+.content{
+
+    border-radius: 50px;
+	background-color: var(--tertiary-color);
+	}
+.title1 .alert{
+	color: red;
+	font-size: 25px;
+}	
+
+.forget_pass{
+	float: right;
+}
+.forget_pass:hover{
+	text-decoration: none;
+	outline: none;
+}
+.btn-primary{
+	padding: 5px 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.i i{
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -20px;
+	color:#8c8c8c;
+}
+.eye{
+	cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    margin-top: -30px;
+	color: #8c8c8c;
+}
+.verify:focus{
+	outline-style: none;
+	box-shadow: none;
+}
+
+@media screen and (max-width: 457px){
+	.content{
+		background-color: var(--primary-color);
+	}
+		.form-content{
+    width: 350px;
+    padding:20px 50px;
+}
+.btn-primary{
+	padding: 5px 30px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.forget_pass{
+	font-size: 15px;
+}
+}
+
+.fa-bars{
+	color:#0066FF;
+	font-size: 30px;
+}
+.navbar-toggler:focus{
+    outline-style: none;
+    box-shadow: none;
+}

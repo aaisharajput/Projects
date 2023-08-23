@@ -1,0 +1,160 @@
+
+:root{
+    --blue:#0066FF;
+    --primary-color:#fff;
+    --secondary-color:#212121;
+    --tertiary-color:#cce0ff;
+    --shade:rgba(0,0,0,.1);
+}
+.dark-theme{
+  --primary-color:#1a1a1a;
+  --secondary-color:#fff;
+  --tertiary-color:#fff;
+  --shade:rgba(0,0,0,.8);
+
+}
+
+body{
+  background:var(--primary-color);
+}
+
+.nav-container{
+	width:100%;
+    padding: 0px 0px;
+    overflow-x: hidden;
+}
+.logo{
+  width: 120px;
+  cursor: pointer;
+}
+.collapse{
+  justify-content: flex-end;
+}
+nav{
+width: 95%;
+}
+
+nav ul li{
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 1s ease-in-out;
+}
+nav ul li a{
+  color:var(--secondary-color);
+}
+nav ul li a:hover{
+  color:var(--secondary-color);
+  transform: scale(1.2);
+}
+.lang_btn{
+margin-left:6rem;
+color: var(--secondary-color);
+}
+.lang_btn a{
+color: var(--secondary-color);
+}
+.lang_btn a:hover{
+color: var(--secondary-color);
+text-decoration: none;
+}
+#icon{
+   width: 20px; 
+}
+.fa-bars{
+  color:#0066FF;
+  font-size: 30px;
+}
+.navbar-toggler:focus{
+    outline-style: none;
+    box-shadow: none;
+}
+.log-in{
+  background:#0066FF;
+  border-radius: 25px;
+  color: #fffF;
+  font-size: 16px;
+  font-weight: bold;
+  outline-style: none;
+  box-shadow: none;
+}
+.log-in:hover{
+  color: #fff;
+}
+
+
+.packages{
+  padding:0rem 9%;
+  padding-bottom: 3rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.pac-heading{
+  text-align: center;
+  padding:1rem 0;
+}
+
+.pac-heading span{
+  font-size: 2rem;
+  background:var(--tertiary-color);
+  color:var(--blue);
+  border-radius: .5rem;
+  padding:0 10px;
+}
+
+
+
+.packages .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+.packages .box-container .box{
+  flex:1 1 20rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem var(--shade);
+}
+
+.packages .box-container .box img{
+  height: 15rem;
+  width:100%;
+  object-fit: cover;
+}
+
+.packages .box-container .box .content{
+  padding:1rem;
+}
+
+.packages .box-container .box .content h3{
+  font-size:1.5rem;
+  color:var(--secondary-color);
+}
+
+.packages .box-container .box .content h3 i{
+  color:orange;
+}
+
+.packages .box-container .box .content p{
+  font-size:1rem;
+  color:var(--secondary-color);
+  margin-bottom: 0;
+}
+
+.packages .box-container .box .content .stars i{
+  font-size:1rem;
+  color:orange;
+}
+
+.packages .box-container .box .content .price{
+  font-size: 1.5rem;
+  color:var(--secondary-color);
+}
+
+.packages .box-container .box .content .price span{
+  color:#aaa;
+  font-size: 1.3rem;
+  text-decoration: line-through;
+}

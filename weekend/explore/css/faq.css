@@ -1,0 +1,102 @@
+:root{
+  --primary-color:#fff;
+  --secondary-color:#212121;
+  --third:#f2f2f2;
+}
+.dark-theme{
+  --primary-color:#1a1a1a;
+  --secondary-color:#fff;
+  --third:#333333;
+}
+body{
+  background:var(--primary-color);
+}
+.nav-container{ 
+  width:100%;
+    padding: 0px 0px;
+    overflow-x: hidden;
+}
+.logo{
+  width: 120px;
+  cursor: pointer;
+}
+.lang_btn{
+margin-left:6rem;
+color: var(--secondary-color);
+}
+.lang_btn a{
+color: var(--secondary-color);
+}
+.lang_btn a:hover{
+color: var(--secondary-color);
+text-decoration: none;
+}
+.collapse{
+  justify-content: flex-end;
+}
+nav ul li{
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 1s ease-in-out;
+}
+nav ul li a{
+  color:  var(--secondary-color);
+}
+nav ul li a:hover{
+  color:var(--secondary-color);
+  transform: scale(1.2);
+}
+
+#icon{
+   width: 20px; 
+}
+.log-in{
+  background:#0066FF;
+  border-radius: 25px;
+  font-size: 15px;
+  color: #fffF;
+  font-weight: bold;
+  outline-style: none;
+  box-shadow: none;
+}
+.log-in:hover{
+  color: #fff;
+}
+.fa-bars{
+  color:#0066FF;
+  font-size: 30px;
+}
+.navbar-toggler:focus{
+    outline-style: none;
+    box-shadow: none;
+}
+
+
+
+.title{
+  padding-left: 60px;
+  color: var(--secondary-color);
+  text-align:;
+  font-size: 40px;
+  font-family: Comic Sans MS;
+}
+#accordion {
+  width: 90%;
+  padding-left: 60px;
+  padding-bottom: 40px;
+}
+.card-link{
+  color: var(--secondary-color);
+}
+.card-link:hover{
+  color: var(--secondary-color);
+}
+.card-header{
+   background: var(--third);
+   border-bottom: 1px solid var(--secondary-color);
+}
+.card-body{
+  color: var(--secondary-color);
+  background: var(--primary-color);
+}

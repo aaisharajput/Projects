@@ -1,0 +1,96 @@
+
+.content{
+	padding-top: 10rem;
+	background-color: #fff;
+	padding-left: 3rem;
+
+}
+
+.img-fluid{
+  padding-top: 3rem;
+  width: 90%;
+
+}
+.signin-text{
+    font-size: 50px;
+	font-weight: 600;
+    padding-bottom: 40px;
+    font-family: Comic Sans MS;
+}
+.form-control{
+	width: 80%;
+	border-color: #00ac96 ;
+    border-width: 0 0 1px 0;
+    padding: 0px;
+    height: auto;
+    border-radius: 0;
+}
+.form-control:focus{
+	outline-style: none;
+    box-shadow: none;
+    border-color: #00ac96;
+}
+.btn-class{
+    padding: 3px 30px;
+    font-weight: bold;
+	border-color:#00ac96;
+	color: #00ac96;
+
+}
+.btn-class:hover{
+	background-color: #00ac96;
+	color: #fff;
+}
+label{
+	font-size: 20px;
+}
+.eye{
+	cursor: pointer;
+    float: right;
+    margin-right: 10rem;
+    margin-top: -24px;
+	color: #8c8c8c;
+}
+.forget_pass{
+	float: right;
+	color: #00ac96;
+	margin-right: 7rem;
+}
+.forget_pass:hover{
+	text-decoration: none;
+	color: red;
+	outline: none;
+}
+
+
+@media screen and (max-width:770px){
+
+	.img-fluid{
+		position: relative;
+        width: 60%;
+	}
+	.img{
+		text-align: center;
+	}
+	.content{
+		padding-top: 0;
+	}
+}
+@media screen and (max-width:530px){
+.eye{
+	margin-right: 7rem;
+}
+.forget_pass{
+	margin-right: 2rem;
+}
+  
+}
+@media screen and (max-width:440px){
+.eye{
+	margin-right: 4rem;
+}
+.forget_pass{
+	font-size: 14px;
+	margin-right: 0;
+}
+}

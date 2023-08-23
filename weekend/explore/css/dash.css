@@ -1,0 +1,311 @@
+
+.sidebar{
+  padding: 0;
+ color: #fff;
+}
+.stick{
+  height: 1000px;
+  background: #000;
+  position: fixed;
+  width: 24.9%;
+  padding: 20px;
+}
+
+.sidebar h2{
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.sidebar li{
+	list-style: none;
+	padding: 1rem 2rem;
+	font-size: 20px;
+}
+.sidebar ul{
+  padding-left: 0;
+}
+.sidebar a{
+	color: #fff;
+}
+.sidebar a:hover{
+	color:red;
+	text-decoration: none;
+}
+.sidebar .active a{
+	color: red;
+}
+.sidebar .active{
+	background: #fff;
+	border-radius: 30px;
+}
+.header{
+	background:#fff;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 2px 2px 7px rgba(0,0,0,0.7);
+}
+
+.dash_content{
+	padding-bottom: 30px;
+}
+.profile .img{
+	position: absolute;
+	right: 12rem;
+	top: 10px;
+	width: 94px;
+}
+.profile-pic{
+  display: flex;
+  justify-content: center;
+}
+.profile-pic .img{
+  width: 80px;
+}
+.profile-pic .img img{
+    border-radius: 50px;
+}
+.profile-pic .img i{
+  cursor: pointer;
+  position: absolute;
+  right: 38%;
+  top: 32%;
+
+}
+.profile button{
+   padding: 0 0;
+  }
+  #file_name{
+  margin-left: 15%;
+  border-width: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+ 
+}
+.modal-body form .btn{
+  padding: 3px 50px;
+  font-size: 18px;
+}
+.modal-title{
+  text-transform: uppercase;
+}
+  #file_name:focus{
+    outline-style: none;
+    box-shadow: none;
+  }
+  .profile button:focus{
+   outline-style: none;
+   box-shadow: none;
+  }
+
+.profile img{
+	width: 100%;
+	border-radius: 35px;
+  padding-right: 2rem;
+}
+.profile h4{
+	padding-top: 10px;
+  text-transform: uppercase;
+}
+.profile span{
+	color: grey;
+	font-size: 18px;
+}
+ .multi_lang{
+ 	color: black;
+    font-size: 13px;
+    padding-bottom: 5px;
+ }
+ .multi_lang a{
+ 	 color: black;
+ }
+ .multi_lang a:hover{
+ 	 color: black;
+ 	 text-decoration: none;
+ }	 
+
+.main-content{
+	margin-top: 20px;
+	display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
+}
+.main-content h6{
+	color: grey;
+}
+.main-content .box{
+width: 20%;
+padding:.5rem 1rem;
+background: #e6e6e6;
+}
+.main-content .traffic{
+  background: grey;
+  color: #fff;
+  width: 20%;
+  padding:.5rem 1rem;
+}
+.main-content .traffic h6{
+	color: #fff;
+
+}
+
+.recent-grid{
+	margin-top: 3.5rem;
+	display: grid;
+	
+}
+.card{
+	background: white;
+	border-radius: 5px;
+}
+.card-header,
+.card-body{
+
+	padding: 1rem;
+}
+.card-header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid black;
+}
+.card-header button{
+	background: #c82333;
+	border-radius: 10px;
+	color: white;
+	font-size: 0.8rem;
+	padding: .5rem 1rem;
+	border: 1px solid red;
+
+}
+table{
+	border-collapse: collapse;
+}
+thead tr{
+	border-top:1px solid grey;
+	border-bottom:2px solid grey;
+
+
+}
+thead td{
+	font-weight: 700; 
+}
+ td{
+	padding: .5rem 1rem;
+	font-size: .9rem;
+	color: black;	
+}
+
+tr td:last-child{
+	display: inline-block;
+	align-items: center;
+}
+
+.fa-bars{
+	visibility: hidden;
+	color: red;
+}
+
+@media screen and (max-width:930px){
+	.stick h2{
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width:768px){
+   .stick{
+    position: relative;
+    width: 48rem;
+   }
+   .header h3{
+   	position: fixed;
+   	padding: 28px 10px;
+  	z-index: 500;
+   }
+   .header h2{
+	padding-top: 25px;
+	padding-left: 55px;
+	font-size: 40px;
+   }
+  .sidebar{
+   	z-index: 8;
+   	width: 100%;
+   	height: 550px;
+   	position: absolute;
+   	left:-1500px;
+   	top: 0px;
+   	transition: .8s;
+   }
+   .dash_content{
+   	width: 49rem;
+   }
+   .fa-bars{
+   	visibility: visible;
+   }
+ .sidebar.open{
+ 	left: 0;
+ 	position: fixed;
+ }
+ .profile h4{
+	margin-bottom: 0;
+	font-size: 28px;
+     }
+.profile span{
+	font-size: 20px;
+    }
+.profile .img{
+	margin-right: 2rem;
+	width: 4rem;
+   }
+   .profile .img img{
+	border-radius: 80px;
+   }
+   .multi_lang{
+   	font-size: 12px;
+   }
+}
+
+
+@media screen and (max-width:680px){
+	.main-content{
+        display: inline-grid;
+        width: 100%;
+    	margin-top: 0px;
+        padding-top: 2rem;
+        grid-gap: 20px;
+   }
+   .main-content .box{
+       width: 350px;
+       padding:.5rem 1rem;
+    }
+   .main-content .traffic{
+       background: grey;
+       width: 350px;
+       padding:.5rem 1rem;
+     }
+.main-content .box h3{
+        font-size: 30px;
+      }
+.main-content .box h6{
+	font-size: 30px;
+}
+.main-content .traffic h3{
+        font-size: 30px;
+      }
+.main-content .traffic h6{
+	font-size: 30px;
+}
+
+table thead td{
+    font-size: 20px;
+  }
+  table tbody td{
+    font-size: 20px;
+  }
+  .card-header h2{
+  	font-size: 35px;
+  }
+  .card-header button{
+  	font-size: 20px;
+  }
+}
