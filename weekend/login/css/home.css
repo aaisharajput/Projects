@@ -1,0 +1,298 @@
+
+*{
+  box-sizing: border-box;
+}
+
+nav{
+  background: #333333;
+}
+nav ul li{
+  padding: 0 5px;
+  font-size: 15px;
+  font-weight: 300;
+  transition: 1s ease-in-out;
+}
+nav ul li a{
+  color: #fff;
+}
+nav ul li a:hover{
+  color:#fff;
+}
+.navbar-toggler i{
+  color: #fff;
+  font-size: 25px;
+}
+.navbar-toggler:focus{
+    outline-style: none;
+    box-shadow: none;
+}
+.navbar-brand{
+  color: #fff;
+  padding-left: 30px;
+}
+.collapse{
+  justify-content: flex-end;
+}
+.wrapper{
+  padding: 0px 60px;
+  padding-bottom: 50px;
+}
+
+
+.home-img img{
+  width: 100%;
+  height: 95vh;
+}
+.home-img .content{
+  position: absolute;
+  right: 6rem;
+  bottom:9rem;
+  color: #fff;
+  font-weight: 600;
+}
+.content h1{
+  font-size: 70px;
+  font-weight: 600;
+}
+.content p{
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.coming{
+  display: flex;
+  justify-content: space-around;
+}
+.alert .coming button{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.alert .coming button:hover{
+  background: #ffc107;
+  color: #fff;
+}
+
+.alert .coming button:focus{
+  background: #ffc107;
+  color: #fff;
+}
+
+.main-content{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+.main-content h6{
+  color: grey;
+}
+.main-content .box{
+width: 20%;
+padding:.5rem 1rem;
+background: #f1f1f1;
+}
+.main-content .traffic{
+  background: grey;
+  color: #fff;
+  width: 20%;
+  padding:.5rem 1rem;
+}
+.main-content .traffic h6{
+  color: #fff;
+}
+.chatting-box{
+  position: fixed;
+  right: 10px;
+  bottom:2rem;
+  z-index: 2000;
+}
+.chatting-box:focus{
+  outline-style: none;
+  box-shadow: none;
+}
+.chatting-box i{
+ color: #333333;
+ font-size: 50px;
+}
+.close,.close:hover{
+  color: #ff0000;
+  opacity: 1;
+}
+.close{
+ position: absolute;
+ right: 5rem;
+ top:2rem;
+ z-index: 1000;
+}
+.close:focus{
+  outline-style: none;
+  box-shadow: none;
+}
+.modal-chat-content{
+  background: none;
+  border: 0;
+}
+.lang_btn{
+margin-left:6rem;
+color: #fff;
+}
+.lang_btn a{
+color: #fff;
+}
+.lang_btn a:hover{
+color:#fff;
+text-decoration: none;
+}
+
+footer{
+  background:#333333;
+  color:#fff;
+  text-align: center;
+  padding: 5px;
+}
+.carousel-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.carousel{
+ width: 60%;
+}
+.carousel .item{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  background: #212121;
+  padding: 13px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 30px;
+}
+.carousel .month{
+  color: #000;
+  background: #ffdd00;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.gallery .image{
+  width: calc(100% / 4);
+  padding: 7px;
+    cursor: pointer;
+}
+.gallery .image span{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery .image img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+.gallery .image:hover img{
+  transform: scale(1.1);
+}
+.gallery .image.hide{
+  display: none;
+}
+.gallery .image.show{
+  animation: animate 0.4s ease;
+}
+@keyframes animate {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
+@media (max-width: 1100px){
+ .home-img .content{
+  right: 1rem;
+  bottom:2rem;
+ }
+}
+@media (max-width: 1000px) {
+  .gallery .image{
+    width: calc(100% / 3);
+  }
+  .carousel{
+     width: 80%;
+  }
+  .carousel .item{
+  font-size: 15px;
+}
+.alert .coming button{
+  font-size: 15px;
+ }
+ .alert .coming .notify h3{
+  font-size: 20px;
+}
+}
+@media (max-width: 800px) {
+  .gallery .image{
+    width: calc(100% / 2);
+  }
+  .alert .coming .hide{
+  display: none;
+ }
+ .alert .coming .hide{
+  display: none;
+ }
+ .home-img .content{
+  left:2rem;
+ }
+  .home-img .content h1{
+  font-size: 40px;
+ }
+}
+
+
+
+
+@media screen and (max-width:680px){
+  
+  .main-content{
+        display: inline-grid;
+        width: 100%;
+        margin-top: 0px;
+        padding-top: 2rem;
+        grid-gap: 20px;
+   }
+   .main-content .box{
+       width: 300px;
+       padding:.5rem 1rem;
+    }
+.main-content .traffic{
+       background: grey;
+       color: #fff;
+       width: 300px;
+       padding:.5rem 1rem;
+     }
+.main-content .box h3{
+        font-size: 30px;
+      }
+.main-content .box h6{
+  font-size: 20px;
+}
+.main-content .traffic h3{
+        font-size: 30px;
+      }
+.main-content .traffic h6{
+  font-size: 20px;
+}
+
+}
+
+
+@media (max-width: 600px) {
+  .gallery .image{
+    width: 100%;
+  }
+}

@@ -1,0 +1,301 @@
+nav{
+  background: #333333;
+}
+nav ul li{
+  padding: 0 5px;
+  font-size: 15px;
+  font-weight: 300;
+  transition: 1s ease-in-out;
+}
+nav ul li a{
+  color: #fff;
+}
+nav ul li a:hover{
+  color:#fff;
+}
+.navbar-toggler i{
+  color: #fff;
+  font-size: 25px;
+}
+.navbar-toggler:focus{
+    outline-style: none;
+    box-shadow: none;
+}
+.navbar-brand{
+  color: #fff;
+  padding-left: 30px;
+}
+.collapse{
+  justify-content: flex-end;
+}
+
+
+.carousel-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.carousel{
+ width: 80%;
+}
+.carousel .item{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  padding: 13px;
+  text-align: center;
+}
+
+
+
+.review_title{
+  padding-top: 40px;
+  padding-left: 10%;
+}
+.review_title i{
+  font-size: 30px;
+  color: #000;
+}
+.review_title h1{
+  color:#000;
+}
+.video{
+ display: flex;
+ justify-content: center;
+}
+.video .img-container{
+  width: 80%;
+  height: 630px;
+}
+.video .img-container img{
+  width: 100%;
+  height: 100%;
+}
+.video .img-container video{
+  width: 100%;
+  height: 100%;
+}
+.video_content{
+  padding-left: 10rem;
+}
+.video_content h6{
+  color: #000;
+}
+
+.carousel .item{
+  height: 9rem;
+  width: 100%;
+}
+.carousel-box .carousel .item img,.carousel-box .carousel .item video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s ease-in-out;
+}
+.carousel-box .carousel .item img:hover,.carousel-box .carousel .item video:hover{
+    transform: scale(1.1);
+}
+
+
+.stars ul li{
+ display: inline-block;
+ padding-right: 5px;
+}
+.stars ul{
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+.rating{
+  padding: 20px;
+  text-align: center;
+}
+.rating h1,.rating h6{
+  color: #fcc00a;
+}
+.stars .star{
+  color:#ffdd00;
+  list-style: none;
+  font-size: 1rem;
+}
+.stars .i{
+  color:#ffdd00;
+}
+.orange{
+  color: orange;
+}
+.yellow{
+  color: #ffdd00;
+}
+
+
+.bar_stars ol {
+  color:#cccccc;
+  font-size: 15px;
+  padding-top: 5px;
+}
+.bar_stars ol li{
+  padding-top: 3px;
+}
+.bar_stars ol li i{
+  color: #ffdd00;
+}
+.skill-bar{
+  display: inline-flex;
+  background-color: #f1f1f1;
+  width: 80%;
+}
+.progress-bar{
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+  background-color:#ffdd00;
+}
+
+
+.review .btn-primary{
+  width: 70%;
+}
+.review{
+  text-align: center;
+  padding-top: 30px;
+}
+.review h5{
+  color:#cccccc;
+}
+.close,.close:hover{
+  color: red;
+  outline-style: none;
+}
+.modal-body ul{
+  list-style: none;
+  color: #cccccc;
+  cursor: pointer;
+  font-size: 25px;
+}
+.modal-body ul li{
+  display: inline-grid;
+  padding-right: 5px;
+}
+.modal-body .re_star{
+  padding-top: 30px;
+}
+.modal-body .btn{
+  width:85%;
+}
+.modal-body form .form-group{
+  width: 93%;
+  padding-left: 35px;
+}
+
+
+.box{
+  padding: 20px 60px;
+  display: inline-flex;
+}
+.box img{
+  width: 7%;
+  height: 7%;
+  border-radius:35px;
+  display:flex;
+  justify-content: center;
+}
+.box .stars{
+  display: inline-block;
+}
+.box .post{
+  padding-left: 30px;
+}
+.box .post h6{
+  font-weight: 450;
+}
+.hr{
+  width: 90%;
+}
+.edit{
+position: absolute;
+right: 70px;
+}
+.box .post small{
+  text-transform: capitalize;
+}
+.box .post span{
+  text-transform: lowercase;
+}
+
+.lang_btn{
+margin-left:6rem;
+color: #fff;
+}
+.lang_btn a{
+color: #fff;
+}
+.lang_btn a:hover{
+color:#fff;
+text-decoration: none;
+}
+footer{
+  background:#333333;
+  color:#fff;
+  text-align: center;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  .carousel{
+     width: 80%;
+  }
+  .carousel .item{
+  font-size: 15px;
+}
+}
+@media screen and (max-width: 800px){
+  .video .img-container{
+    height: 350px;
+  }
+ .video_content{
+  padding-left: 2rem;
+ }
+ .carousel .item{
+  height: 6rem;
+}
+}
+
+@media screen and (max-width: 770px){
+ .bar_stars ol {
+    padding-left: 4rem;
+  }
+  .review .btn-primary{
+    width: 40%;
+  }
+  .modal-body .btn{
+    width:85%;
+  }
+  .box img{
+  width: 50px;
+  height: 50px;
+  }
+}
+@media screen and (max-width: 600px){
+ .video .img-container{
+    height: 250px;
+  }
+}
+@media screen and (max-width: 520px){
+  .box{
+  padding: 20px 0px;
+ }
+ .edit{
+    right: 20px;
+   }
+  .edit button{
+     font-size: 13px;
+     padding: 4px 10px;
+  }
+}

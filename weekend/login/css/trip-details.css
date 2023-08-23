@@ -1,0 +1,212 @@
+
+*{
+  box-sizing: border-box;
+}
+
+nav{
+  background: #333333;
+}
+nav ul li{
+  padding: 0 5px;
+  font-size: 15px;
+  font-weight: 300;
+  transition: 1s ease-in-out;
+}
+nav ul li a{
+  color: #fff;
+}
+nav ul li a:hover{
+  color:#fff;
+}
+.navbar-toggler i{
+  color: #fff;
+  font-size: 25px;
+}
+.navbar-toggler:focus{
+    outline-style: none;
+    box-shadow: none;
+}
+.navbar-brand{
+  color: #fff;
+  padding-left: 30px;
+}
+.collapse{
+  justify-content: flex-end;
+}
+.title1 i{
+  font-size: 30px;
+  color: #000;
+}
+
+.container{
+  padding: 4rem 0;
+}
+.container .summary{
+  display:flex;
+  justify-content: space-around;
+}
+.container h6{
+  color: grey;
+}
+.container .summary div h5 i{
+  font-size: 50px;
+  color: #0066FF;
+}
+.container .summary div h6{
+  padding-left: 3rem;
+}
+.container .img-container{
+  padding: 20px 0;
+}
+.container .img-container img{
+  width: 100%;
+}
+.container .book .form-control{
+  width: 20%;
+}
+.container .title{
+  padding-top: 1rem;
+}
+.main-container{
+  padding: 15px; 
+}
+.main-container .details{
+  display: flex;
+  justify-content: space-around;
+}
+.main-container .details span{
+  font-size: 15px;
+  padding-left: 8px;
+  color:#0066FF;
+}
+.main-container .details p{
+    color:#000;
+}
+.card-link{
+  color: #000;
+}
+.card-link:hover{
+  color: #000;
+}
+.card-body img{
+  width: 40%;
+}
+.card-body .event{
+  display: inline-flex;
+  padding: 0 10px;
+}
+
+.carousel-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.carousel{
+ width: 80%;
+}
+.carousel .item{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  padding: 13px;
+  text-align: center;
+}
+
+.review_title{
+  padding-top: 40px;
+  padding-left: 12%;
+}
+.review_title i{
+  font-size: 30px;
+  color: #000;
+}
+.review_title h1{
+  color:#000;
+}
+.video{
+ display: flex;
+ justify-content: center;
+}
+.video .img-container{
+  width: 100%;
+  height: 630px;
+}
+.video .img-container img{
+  width: 100%;
+  height: 100%;
+}
+.video .img-container video{
+  width: 100%;
+  height: 100%;
+}
+.video_content{
+  padding-left: 10rem;
+}
+.video_content h6{
+  color: #000;
+}
+
+.carousel .item{
+  height: 9rem;
+  width: 100%;
+}
+.carousel-box .carousel .item img,.carousel-box .carousel .item video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s ease-in-out;
+}
+.carousel-box .carousel .item img:hover,.carousel-box .carousel .item video:hover{
+    transform: scale(1.1);
+}
+.lang_btn{
+margin-left:6rem;
+color: #fff;
+}
+.lang_btn a{
+color: #fff;
+}
+.lang_btn a:hover{
+color:#fff;
+text-decoration: none;
+}
+footer{
+  background:#333333;
+  color:#fff;
+  text-align: center;
+  padding: 5px;
+}
+
+
+@media (max-width: 1000px) {
+  .carousel{
+     width: 80%;
+  }
+  .carousel .item{
+  font-size: 15px;
+}
+}
+@media screen and (max-width: 800px){
+ .carousel .item{
+  height: 6rem;
+  }
+}
+
+@media screen and (max-width: 770px){
+  .container{
+    padding:4rem 1rem;
+  }
+  .container .title h2{
+  font-size: 25px; 
+ }
+ .container .summary div h5 i{
+  font-size: 25px;
+ }
+ .container .summary div h5{
+  font-size: 15px;
+ }
+.container .summary div h6{
+  font-size: 12px;
+ }
+}

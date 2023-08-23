@@ -1,0 +1,174 @@
+:root{
+   --red:#0073e6;
+  --primary-color:#fff;
+  --secondary-color:#212121;
+}
+nav{
+  background: #333333;
+}
+nav ul li{
+  padding: 0 5px;
+  font-size: 15px;
+  font-weight: 300;
+  transition: 1s ease-in-out;
+}
+nav ul li a{
+  color: #fff;
+}
+nav ul li a:hover{
+  color:#fff;
+}
+.navbar-toggler i{
+  color: #fff;
+  font-size: 25px;
+}
+.navbar-toggler:focus{
+    outline-style: none;
+    box-shadow: none;
+}
+.navbar-brand{
+  color: #fff;
+  padding-left: 30px;
+}
+.collapse{
+  justify-content: flex-end;
+}
+
+
+.no-trip{
+  color: #ccc;
+  text-align: center;
+ padding:289px;
+}
+.stars ul li{
+ display: inline-block;
+ padding-right: 5px;
+}
+.stars ul{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+.stars ul li i{
+  color: #ffdd00;
+}
+.lang_btn{
+margin-left:6rem;
+color: #fff;
+}
+.lang_btn a{
+color: #fff;
+}
+.lang_btn a:hover{
+color:#fff;
+text-decoration: none;
+}
+footer{
+  background:#333333;
+  color:#fff;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  width: 100%;
+}
+
+
+
+.gallery{
+  background::var(--primary-color);
+}
+
+ .gallery .box-container{
+  padding:10px 0;
+}
+ .gallery .box{
+  width:75%;
+  margin:2rem auto;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:#fff;
+  box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+ .gallery .g-image{
+  height: 18rem;
+  width:50%;
+}
+
+ .gallery img{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+
+ .gallery .g-content{
+  height: 100%;
+  width:50%;
+  padding:20px;
+  padding-left: 40px;
+}
+
+.gallery  .g-h3{
+  color:var(--red);
+}
+
+.gallery .g-p{
+  color:#666;
+  line-height: 22px;
+}
+.gallery .g-btn{
+background-color:var(--red);
+color: #fff;
+margin-top: 10px;
+padding: 5px 20px;
+border-radius:10px;
+opacity: .8;
+}
+.gallery .g-btn:hover{
+  opacity: 1;
+}
+.gallery-title{
+  text-align: center;
+  margin-top: 20px;
+}
+.gallery h2{
+  color: var(--red);
+}
+
+.gallery .box-container .box:nth-child(even){
+  flex-flow: row-reverse;
+}
+
+.gallery .box-container .box:nth-child(even) .content{
+  text-align: right;
+}
+
+
+@media (max-width:770px){
+
+  .gallery .box-container .box{
+    flex-flow: column;
+    width: 90%;
+  }
+
+  .gallery .box-container .box:nth-child(even){
+    flex-flow: column;
+  }
+
+  .gallery .box-container .box .g-image{
+    width: 100%;
+  }
+
+  .gallery .box-container .box .g-content{
+    width: 100%;
+  }
+
+  .gallery .box-container .box:nth-child(even) .g-content{
+    text-align: left;
+  }
+
+}
+
+
